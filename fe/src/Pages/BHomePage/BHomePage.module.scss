@@ -1,0 +1,41 @@
+@import '../../styles/_colors.scss';
+
+.flexWithSpaceBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  @extend .flexWithSpaceBetween;
+  flex-wrap: wrap;
+  align-items: center;
+
+  img:first-child{
+    width: 100%;
+    height: 20em;
+}
+  .cardButtonsContainer {
+    @extend .flexWithSpaceBetween;
+  }
+
+  .driver {
+    @extend .flexWithSpaceBetween;
+    p {
+      font-size: 1.5em;
+      font-weight: bolder;
+    }
+  }
+
+  .priceAndDuration {
+    @extend .flexWithSpaceBetween;
+  }
+
+  .carAndProvider {
+    @extend .flexWithSpaceBetween;
+    font-size: 0.75;
+    font-weight: bold;
+    color: $primary-color;
+  }
+}

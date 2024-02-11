@@ -1,0 +1,11 @@
+@import '../styles/colors.scss';
+
+.mainContainer {
+  margin-top: 2em;
+  margin-left: 10em;
+  margin-right: 10em;
+  $breakpoint-tablet: 768px;
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin: 0;
+  }
+}
